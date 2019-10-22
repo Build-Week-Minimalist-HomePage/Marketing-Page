@@ -8,6 +8,7 @@ header {
     
     .tagline {
         align-self: center;
+        padding-top: 4em;
     }
 
     .title {
@@ -23,21 +24,42 @@ header {
     .buttons {
         align-self: flex-end;
         padding-bottom: 2em;
+        
 
-        // .login, .signup {
-        //     margin: 1em;
-        //     .button-reset();
-        // }
+        .login, .signup {
+            margin: 1em;
+            .button-reset();
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.1);
+                background-color: black;
+                color: @link-hover;
+            }
 
-        .login {
+            span {
+                padding-left: 0.2em;
+            }
+
+        }
+
+        .signup  {
             padding: 15px 75px;
             .button-dark();
+            
+        }
+
+        .login{
+            border: 2px solid @link-color;
+            background:none;
+            font-size: 0.8rem;
         }
     }
 }
 
 .content {
-    padding: 0em 2em 0em 2em;
+    padding: 5em 2em 0em 2em;
     margin-bottom: 4em;
     border-bottom: @border-bottom;
     
@@ -49,6 +71,7 @@ header {
             width: 70%;
             padding: 2em;
             background-color: #f3f3f3a2;
+            font-size: 1.2rem;
         }
 
         img {
@@ -59,5 +82,9 @@ header {
     
     .features2 {
         flex-direction: row-reverse;
+
+        p {
+            text-align: right;
+        }
     }
 }

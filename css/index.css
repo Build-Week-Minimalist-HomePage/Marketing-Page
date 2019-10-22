@@ -143,6 +143,7 @@ nav .nav-links {
   color: #444444;
   padding: 1rem;
   margin-right: 2rem;
+  transition: all 0.5s ease;
   border-bottom: 1px solid #444444;
 }
 nav .nav-links:hover {
@@ -160,6 +161,7 @@ footer .nav-links {
   color: #444444;
   padding: 1rem;
   margin-right: 2rem;
+  transition: all 0.5s ease;
   border-bottom: 1px solid #444444;
 }
 footer .nav-links:hover {
@@ -178,6 +180,7 @@ header {
 }
 header .tagline {
   align-self: center;
+  padding-top: 4em;
 }
 header .title {
   font-size: 2.4rem;
@@ -199,12 +202,32 @@ header .buttons .signup {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+header .buttons .login:hover,
+header .buttons .signup:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: #e2e2e2;
+}
+header .buttons .login span,
+header .buttons .signup span {
+  padding-left: 0.2em;
+}
+header .buttons .signup {
+  padding: 15px 75px;
+  color: #e2e2e2;
+  background-color: #444444;
 }
 header .buttons .login {
-  padding: 15px 75px;
+  border: 2px solid #444444;
+  background: none;
+  font-size: 0.8rem;
 }
 .content {
-  padding: 0em 2em 0em 2em;
+  padding: 5em 2em 0em 2em;
   margin-bottom: 4em;
   border-bottom: 1px solid #444444;
 }
@@ -220,6 +243,7 @@ header .buttons .login {
   width: 70%;
   padding: 2em;
   background-color: #f3f3f3a2;
+  font-size: 1.2rem;
 }
 .content .features1 img,
 .content .features2 img,
@@ -229,4 +253,7 @@ header .buttons .login {
 }
 .content .features2 {
   flex-direction: row-reverse;
+}
+.content .features2 p {
+  text-align: right;
 }

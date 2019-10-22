@@ -5,6 +5,7 @@
     color: @link;
     padding: 1rem;
     margin-right: 2rem;
+    transition: all 0.5s ease;
 
     &:hover {
         color: @hovercolor;
@@ -19,9 +20,11 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        cursor: pointer;
 }
 
 .button-dark(){
-    color: @hovercolor;
-    background-color: @link-hbgc;
+    color: @link-hover;
+    background-color: @link-color;
 }
+
