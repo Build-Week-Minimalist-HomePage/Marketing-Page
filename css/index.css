@@ -1,15 +1,3 @@
-.title {
-  text-transform: uppercase;
-}
-.nav-links {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  padding: 2rem;
-}
-.nav-links:hover {
-  background: red;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -140,4 +128,105 @@ table {
 }
 html {
   font-family: 'Nanum Gothic', sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+}
+nav {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+nav .nav-links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 1rem;
+  margin-right: 2rem;
+  border-bottom: 1px solid #444444;
+}
+nav .nav-links:hover {
+  color: #e2e2e2;
+  background-color: #444444;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+footer .nav-links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 1rem;
+  margin-right: 2rem;
+  border-bottom: 1px solid #444444;
+}
+footer .nav-links:hover {
+  color: #e2e2e2;
+  background-color: #444444;
+}
+footer p {
+  text-transform: uppercase;
+}
+header {
+  height: 15rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #444444;
+}
+header .tagline {
+  align-self: center;
+}
+header .title {
+  font-size: 2.4rem;
+  padding-left: 0.8em;
+}
+header p {
+  padding: 1em 0em 0em 2em;
+}
+header .buttons {
+  align-self: flex-end;
+  padding-bottom: 2em;
+}
+header .buttons .login,
+header .buttons .signup {
+  margin: 1em;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+header .buttons .login {
+  padding: 15px 75px;
+}
+.content {
+  padding: 0em 2em 0em 2em;
+  margin-bottom: 4em;
+  border-bottom: 1px solid #444444;
+}
+.content .features1,
+.content .features2,
+.content .features3 {
+  padding-bottom: 3em;
+  display: flex;
+}
+.content .features1 p,
+.content .features2 p,
+.content .features3 p {
+  width: 70%;
+  padding: 2em;
+  background-color: #f3f3f3a2;
+}
+.content .features1 img,
+.content .features2 img,
+.content .features3 img {
+  width: 25em;
+  margin: 1em;
+}
+.content .features2 {
+  flex-direction: row-reverse;
 }
