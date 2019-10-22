@@ -128,6 +128,7 @@ table {
 }
 html {
   font-family: 'Nanum Gothic', sans-serif;
+  color: #353535;
 }
 h1 {
   text-transform: uppercase;
@@ -183,7 +184,7 @@ header .tagline {
   padding-top: 4em;
 }
 header .title {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   padding-left: 0.8em;
 }
 header p {
@@ -222,7 +223,7 @@ header .buttons .signup {
   background-color: #444444;
 }
 header .buttons .login {
-  border: 2px solid #444444;
+  border: 1px solid #444444;
   background: none;
   font-size: 0.8rem;
 }
@@ -237,13 +238,19 @@ header .buttons .login {
   padding-bottom: 3em;
   display: flex;
 }
-.content .features1 p,
-.content .features2 p,
-.content .features3 p {
+.content .features1 .desc,
+.content .features2 .desc,
+.content .features3 .desc {
   width: 70%;
   padding: 2em;
   background-color: #f3f3f3a2;
   font-size: 1.2rem;
+}
+.content .features1 h1,
+.content .features2 h1,
+.content .features3 h1 {
+  padding-bottom: 1em;
+  font-size: 1.8rem;
 }
 .content .features1 img,
 .content .features2 img,
@@ -254,6 +261,7 @@ header .buttons .login {
 .content .features2 {
   flex-direction: row-reverse;
 }
+.content .features2 h1,
 .content .features2 p {
   text-align: right;
 }
