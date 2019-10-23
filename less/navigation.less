@@ -2,9 +2,15 @@ nav{
     padding-top: 10px;
     display: flex;
     justify-content: flex-end;
-   
+   @media @phone{
+       justify-content: center;
+   }
     .nav-links {
     .nav-mixin();
     border-bottom: @border-bottom;
+
+    @media @phone {
+        margin: 0 0.5em 0 0.5em;
+    }
     }
 }

@@ -1,36 +1,65 @@
 header {
     // background-color: lightgray;
-    height: 15rem;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
     border-bottom: @border-bottom;
+    
+    @media @phone {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
     
     .tagline {
         align-self: center;
-        padding-top: 4em;
     }
 
     .title {
         font-size: 2.8rem;
         padding-left: 0.8em;
+
+        @media @phone {
+            padding-left: 0;
+            text-align: center;;
+        }
     }
 
     p {
         padding: 1em 0em 0em 2em;
 
+        @media @phone {
+            text-align: center;
+            padding: 1em;
+        }
+
+    }
+
+    .tagline, .buttons {
+        padding-top: 4em;
     }
 
     .buttons {
         align-self: flex-end;
         padding-bottom: 2em;
-        
+
+        @media @phone {
+            align-self: center;
+            flex-wrap: wrap;
+        }
 
         .login, .signup {
             margin: 1em;
             .button-reset();
             text-transform: uppercase;
             transition: all 0.3s ease;
+
+            @media @phone {
+                width: 100%;
+                align-self: center;
+                margin: 1.5em 0 0 0;
+                transition: none;
+            }
             
             &:hover {
                 transform: scale(1.1);
@@ -60,18 +89,38 @@ header {
 
 .content {
     padding: 5em 2em 0em 2em;
-    margin-bottom: 4em;
     border-bottom: @border-bottom;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+
+    @media @phone {
+        padding-top: 1em;
+    }
     
     .features1, .features2, .features3 {
         padding-bottom: 3em;
         display: flex;
 
+        @media @phone {
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            @media @phone {
+                text-align: center;
+            }
+        }
+
         .desc{
             width: 70%;
             padding: 2em;
-            background-color: #f3f3f3a2;
+            background-color: @desc-color;
             font-size: 1.2rem;
+
+            @media @phone {
+                width: 100%;
+            }
         }
 
         h1 {
@@ -82,6 +131,10 @@ header {
         img {
             width: 25em;
             margin: 1em;
+
+            @media @phone {
+                width: 100%;
+            }
         }
     }
     
@@ -90,6 +143,12 @@ header {
 
         h1, p {
             text-align: right;
+        }
+
+        p {
+            @media @phone {
+                text-align: left;
+            }
         }
     }
 }
