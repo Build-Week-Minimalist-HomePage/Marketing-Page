@@ -138,7 +138,7 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   nav {
     justify-content: center;
   }
@@ -156,12 +156,12 @@ nav .nav-links:hover {
   color: #e2e2e2;
   background-color: #444444;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   nav .nav-links {
     background-color: #f3f3f3a2;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   nav .nav-links {
     margin: 0 0.5em 0 0.5em;
   }
@@ -189,7 +189,7 @@ footer .nav-links:hover {
   color: #e2e2e2;
   background-color: #444444;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   footer .nav-links {
     background-color: #f3f3f3a2;
   }
@@ -209,7 +209,7 @@ header {
   padding-bottom: 2em;
   border-bottom: 1px solid #444444;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header {
     flex-wrap: wrap;
     flex-direction: column;
@@ -218,14 +218,29 @@ header {
 header .tagline {
   align-self: center;
 }
+@media (min-width: 1000px) {
+  header .tagline {
+    width: 56%;
+  }
+}
+@media (max-width: 800px) {
+  header .tagline {
+    width: 75%;
+  }
+}
 header .title {
   font-size: 2.8rem;
   padding-left: 0.8em;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .title {
     padding-left: 0;
     text-align: center;
+  }
+}
+@media (min-width: 1000px), (max-width: 800px) {
+  header .title {
+    font-size: 2.4rem;
   }
 }
 header p {
@@ -245,10 +260,15 @@ header .buttons {
   align-self: flex-end;
   padding-bottom: 2em;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .buttons {
     align-self: center;
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 1000px) {
+  header .buttons {
+    display: inline-block;
   }
 }
 header .buttons .login,
@@ -292,6 +312,11 @@ header .buttons .login {
   border: 1px solid #444444;
   background: none;
   font-size: 0.8rem;
+}
+@media (min-width: 1000px) {
+  header .buttons .login {
+    margin: 0 2em 0 0;
+  }
 }
 .content {
   padding: 5em 2em 0em 2em;

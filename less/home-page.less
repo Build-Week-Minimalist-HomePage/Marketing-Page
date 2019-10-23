@@ -1,27 +1,38 @@
 header {
-    // background-color: lightgray;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 2em;
     padding-bottom: 2em;
     border-bottom: @border-bottom;
     
-    @media @phone {
+    @media @phone, @tablet {
         flex-wrap: wrap;
         flex-direction: column;
     }
     
     .tagline {
         align-self: center;
+
+        @media @desktop {
+            width: 56%;
+        }
+
+        @media @tablet {
+            width: 75%;
+        }
     }
 
     .title {
         font-size: 2.8rem;
         padding-left: 0.8em;
 
-        @media @phone {
+        @media @phone, @tablet {
             padding-left: 0;
-            text-align: center;;
+            text-align: center;
+        }
+
+        @media @desktop, @tablet {
+            font-size: 2.4rem;
         }
     }
 
@@ -43,10 +54,15 @@ header {
         align-self: flex-end;
         padding-bottom: 2em;
 
-        @media @phone {
+        @media @phone, @tablet {
             align-self: center;
             flex-wrap: wrap;
         }
+
+        @media @desktop {
+            display: inline-block;
+        }
+
 
         .login, .signup {
             margin: 1em;
@@ -60,7 +76,8 @@ header {
                 margin: 1.5em 0 0 0;
                 transition: none;
             }
-            
+
+
             &:hover {
                 transform: scale(1.1);
                 background-color: black;
@@ -83,6 +100,10 @@ header {
             border: 1px solid @link-color;
             background:none;
             font-size: 0.8rem;
+
+            @media @desktop {
+                margin: 0 2em 0 0;
+            }
         }
     }
 }
