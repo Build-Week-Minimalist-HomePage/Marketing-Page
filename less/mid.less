@@ -142,10 +142,6 @@
     padding-left: 10em;
     padding-right: 10em;
     width: 100%;
-  
-  @media @tablet{
-    margin-top: -50px;
-  }
   }
 }
 
@@ -154,19 +150,32 @@
   width: 20%;
   background-color: green;
   color: yellow;
+
   @media @tablet, @phone {
     padding-left: 10em;
     padding-right: 10em;
     width: 100%;
   }
+
+  @media @desktop{
+    margin-left: 5em;
+    align-self: flex-end;
+  }
 }
 
 .six{
-  display: inline;
+  display: none;
   @media @desktop, @phone, @tablet{
     display: none;
   }
 }
 
-
+.bottom{
+  
+  @media @desktop{
+  margin-top: -3.1em;
+  display: flex;
+  justify-content: space-between;
+}
+}
 

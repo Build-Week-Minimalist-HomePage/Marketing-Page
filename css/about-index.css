@@ -507,11 +507,24 @@ footer p {
     width: 100%;
   }
 }
+@media (max-width: 1300px) {
+  .five {
+    margin-left: 5em;
+    align-self: flex-end;
+  }
+}
 .six {
-  display: inline;
+  display: none;
 }
 @media (max-width: 1300px), (max-width:500px), (max-width:1000px) {
   .six {
     display: none;
+  }
+}
+@media (max-width: 1300px) {
+  .bottom {
+    margin-top: -3.1em;
+    display: flex;
+    justify-content: space-between;
   }
 }
