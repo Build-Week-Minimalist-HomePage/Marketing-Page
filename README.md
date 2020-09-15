@@ -1,8 +1,8 @@
 ## Project title
-An alternative to your home page, Minimalist aims to make a simple, easy to naviage user interface for internet searches, local weather and other common information you may subscribe to.
+Minimalist Home Page
 
 ## Motivation
-To make a replacement home page for your browser that has a more modern, simple asthetic.
+An alternative to your home page, Minimalist aims to make a simple, easy to naviage user interface for internet searches, local weather and other common information you may subscribe to.
 
 ## Code style
 Formatted using Prettier and Beautify
